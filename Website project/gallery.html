@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>gallery</title>
+    <style>
+     @font-face {
+    font-family: myfont;
+    src: url("fonts/TheHistoriaDemo.ttf");
+  }
+        * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url('images/sitebg.jpg') no-repeat fixed center;
+    overflow: hidden;
+}
+
+/* Start l3onwan */
+
+ h1{
+    font-size: 5rem;
+    font-family: 'myfont' , sans-serif;
+    background: linear-gradient(to top , #ffe838,#fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    text-align: center;
+}
+
+/* End l3onwan */
+
+/* Start tsawr */
+
+.container {
+    width: 760px;
+    height: 500px;
+    margin: 10px auto;
+    position: relative
+}
+
+.container img {
+    width: 760px;
+    height: 500px;
+    position: absolute;
+    animation: sildeshow 12s infinite;
+    opacity: 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 15px;
+    -moz-box-shadow: 0 0 15px;
+    box-shadow: 0 0 15px
+}
+
+.container img:first-of-type { 
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    animation-delay: 0s;
+    z-index: 6
+}
+
+.container img:nth-of-type(2) {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+    z-index: 5
+}
+
+.container img:nth-of-type(3) {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    animation-delay: 4s;
+    z-index: 4
+}
+
+.container img:nth-of-type(4) {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    animation-delay: 6s;
+    z-index: 3
+}
+
+.container img:nth-of-type(5) {
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    animation-delay: 8s;
+    z-index: 2
+}
+
+.container img:last-of-type {
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    animation-delay: 10s;
+    z-index: 1
+}
+
+/* End tsawr */
+
+/* Start Lanimation */
+
+@-webkit-keyframes sildeshow {
+    
+    0%,30% { opacity: 0 }
+
+    20% { opacity: 1 }
+
+}
+
+@-moz-keyframes sildeshow {
+    
+    0%, 30% { opacity: 0 }
+
+    20% { opacity: 1 }
+
+}
+
+@keyframes sildeshow {
+    
+    0%, 30% { opacity: 0 }
+
+    20% { opacity: 1 }
+
+}
+
+/* End Lanimation */
+
+i{
+    width: initial;
+    color: #ffe838;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 40px;
+}
+    </style>
+</head>
+<body>
+    <a href="mainHtml.html"><i class="fas fa-arrow-right"></a></i>
+    <h1>some of my humble work :)</h1>
+        <div class="container">
+            <img src="images/01.jpg" alt="">
+            <img src="images/02.jpg" alt="">
+            <img src="images/03.jpg" alt="">
+            <img src="images/04.jpg" alt="">
+            <img src="images/05.jpg" alt="">
+        </div>
+</body>
+</html>
